@@ -1,0 +1,75 @@
+﻿@model MyCompanySchedule.ViewModels.Home.RegisterVM
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Company Schedule/ Register</title>
+
+    <!--    Favicons-->
+    <link rel="icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--    Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!--    Bootstrap -->
+    <link href="/css/loginStyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--    Calendar -->
+</head>
+   <body>
+<div class="bg-image"></div>
+
+    <form action="/Home/Register" method="post" class="container">  
+        <h1>Register for free</h1>
+        <div class="mb-3">
+            <label class="col-form-label">Username:</label>
+            <input type="text" class="form-control shadow bg-light" id="Username" name="Username" value="@Model.Username" >
+            <div class="col-2">@Html.ValidationMessageFor(m => m.Username)</div>
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label">First name:</label>
+            <input type="text" class="form-control shadow bg-light" id="FirstName" name="FirstName" value="@Model.FirstName">
+        </div>
+        <div class="mb-3">
+            <label class="col-form-label">Last name:</label>
+            <input type="text" class="form-control shadow bg-light" id="LastName" name="LastName" value="@Model.LastName">
+        </div>
+        <div class="mb-3">
+            <label for="message-text" class="col-form-label">Your Company Name:</label>
+            <input type="text" class="form-control shadow bg-light" id="CompanyName" name="CompanyName" value="@Model.CompanyName">
+        </div>
+        <div class="mb-3">
+            <label for="message-text" class="col-form-label">Create a Password:</label>
+            <input type="password" class="form-control shadow bg-light" id="Password" name="Password" value="@Model.Password">
+        </div>
+        <div class="mb-3 row me-0 justify-content-end">
+            <a href="Home" class="btn col-3 me-3 btn-white">Back</a>
+            <button type="submit" class="btn col-3 btn-primary">Register</button>
+        </div>
+    </form>
+
+</body>
+</html>

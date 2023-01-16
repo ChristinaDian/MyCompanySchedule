@@ -1,0 +1,126 @@
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.GeneratedMSBuildEditorConfig.editorconfig
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.AssemblyInfoInputs.cache
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.AssemblyInfo.cs
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.csproj.CoreCompileInputs.cache
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.MvcApplicationPartsAssemblyInfo.cache
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.RazorAssemblyInfo.cache
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.RazorAssemblyInfo.cs
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\appsettings.Development.json
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\appsettings.json
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.staticwebassets.runtime.json
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.exe
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.deps.json
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.runtimeconfig.json
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\ref\MyCompanySchedule.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.pdb
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\staticwebassets.build.json
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\staticwebassets.development.json
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\scopedcss\bundle\MyCompanySchedule.styles.css
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\scopedcss\projectbundle\MyCompanySchedule.bundle.scp.css
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\ref\MyCompanySchedule.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.pdb
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.genruntimeconfig.cache
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.csproj.CopyComplete
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Humanizer.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Castle.Core.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\PU\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.csproj.AssemblyReference.cache
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\appsettings.Development.json
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\appsettings.json
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.staticwebassets.runtime.json
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.exe
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.deps.json
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.runtimeconfig.json
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\MyCompanySchedule.pdb
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Castle.Core.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Humanizer.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.csproj.AssemblyReference.cache
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.GeneratedMSBuildEditorConfig.editorconfig
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.AssemblyInfoInputs.cache
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.AssemblyInfo.cs
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.csproj.CoreCompileInputs.cache
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.MvcApplicationPartsAssemblyInfo.cache
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.RazorAssemblyInfo.cache
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.RazorAssemblyInfo.cs
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\staticwebassets.build.json
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\staticwebassets.development.json
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\scopedcss\bundle\MyCompanySchedule.styles.css
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\scopedcss\projectbundle\MyCompanySchedule.bundle.scp.css
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.csproj.CopyComplete
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\refint\MyCompanySchedule.dll
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.pdb
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\MyCompanySchedule.genruntimeconfig.cache
+D:\PU\Втори курс\WEB2\MyCompanySchedule\MyCompanySchedule\obj\Debug\net6.0\ref\MyCompanySchedule.dll

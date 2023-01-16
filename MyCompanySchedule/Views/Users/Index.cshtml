@@ -1,0 +1,100 @@
+﻿@model MyCompanySchedule.ViewModels.Users.IndexVM
+@using MyCompanySchedule.Entities
+@using MyCompanySchedule.ExtentionMethods;
+@{
+    this.Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["title"] = "USERS";
+    User loggedUser = this.ViewContext.HttpContext.Session.GetObject<User>("loggedUser");
+}
+<fieldset>
+    <h1>Employees</h1>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Users</a></li>
+            <li class="breadcrumb-item active"><a href="#">Index</a></li>
+        </ol>
+    </nav>
+    <form action="/Users/Index" method="get">
+        @Html.HiddenFor(m => m.Pager.ItemsPerPage)
+       <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input type="text" class="form-control" id="Username" name="Filter.Username" value="@Model.Filter.Username">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" id="FirstName" name="Filter.FirstName" value="@Model.Filter.FirstName">
+        </div>
+        <div class="mb-3 row me-0 justify-content-end">
+            <a href="/Users/Index" class="btn col-3 me-3 btn-outline-primary">Clear</a>
+            <input type="submit" class="btn col-3 btn-primary" value="Filter" />
+        </div>
+        @if (loggedUser.Role != "Employee")
+        {
+           <a href="Create" class="btn btn-primary me-2">Create New</a>
+        }
+        <div class="table-responsive">
+            <table class=" table table-hover caption-top">
+                <caption>All Employees</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Username</th>
+                        <th scope="col">First name</th>
+                        <th scope="col">Last name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (User item in Model.Items)
+                    {
+                        <tr>
+                        <td>@item.Username</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.Role</td>
+                        <td>	
+                            @if (loggedUser.Role != "Employee")
+                            {
+                                <a href="/Users/Edit?Id=@item.Id">EDIT</a>
+                                <a href="/Users/Delete?Id=@item.Id"
+		                        onclick="return confirm('Delete Record?');">DELETE</a>
+                            }
+                        </td>
+                    </tr> 
+                    }
+                </tbody>
+            </table>
+        </div>
+        @{
+            string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+            string action = this.ViewContext.RouteData.Values["action"].ToString();
+        }
+         <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="/@controller/@action?Pager.Page=@(Model.Pager.Page-1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage&Filter.Username=@Model.Filter.Username&Filter.FirstName=@Model.Filter.FirstName">Previous</a></li>
+                @for(int i=0; i<Model.Pager.PagesCount; i++)
+                {
+                 <li class="page-item">
+                     <a class="page-link" href="/@controller/@action?Pager.Page=@(i+1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage&Filter.Username=@Model.Filter.Username&Filter.FirstName=@Model.Filter.FirstName">@(i+1)</a>
+                 </li>  
+                }                
+                <li class="page-item"><a class="page-link" href="/@controller/@action?Pager.Page=@(Model.Pager.Page+1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage&Filter.Username=@Model.Filter.Username&Filter.FirstName=@Model.Filter.FirstName">Next</a></li>
+                <li class="ms-3">
+                    <script>
+                        function ddlItemsPerPage_OnChange(){
+                            let control = document.getElementById("ddlItemsPerPage");
+                            document.location.href="/@controller/@action?Pager.ItemsPerPage=" + control.value + "&Filter.Username=@Model.Filter.Username&Filter.FirstName=@Model.Filter.FirstName";
+                        }
+                    </script>
+                    <select class="form-select" aria-label="Default select example" id="ddlItemsPerPage" onchange="ddlItemsPerPage_OnChange()">
+                        <option selected>Select how many to show</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                </li>
+            </ul>
+           
+        </nav>
+    </form>
+</fieldset>

@@ -1,0 +1,420 @@
+﻿@model MyCompanySchedule.ViewModels.Home.RegisterVM
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Company Schedule/ Landing page</title>
+
+    <!--    Favicons-->
+    <link rel="icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--    Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!--    Bootstrap -->
+    <link href="/css/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--    Calendar -->
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top py-2 px-0 bg-light"
+         data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container">
+            <!-- Toogle btn for sm-device -->
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Image placeholder" src="/img/logo_img.png" id="navbar-logo">
+                My Company Schedule
+            </a>
+            <div class="collapse navbar-collapse justify-content-center w-lg-auto order-3 order-lg-0 mt-1 " id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Why My Company Schedule</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">What we offer?</a>
+                            <a href="#" class="dropdown-item">Our history</a>
+                            <a href="#" class="dropdown-item">Reviews</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="btn btn-success dropdown-item">24/7 customer service</a>
+                        </div>
+                    </li>
+                    <!-- Second Dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Features</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Schedule tracking</a>
+                            <a href="#" class="dropdown-item">Task manager</a>
+                            <a href="#" class="dropdown-item">Detailed reports</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="d-flex flex-column align-items-end">
+                <ul class="navbar-nav">
+                    <li class="d-none d-lg-block"> <a class="btn btn-primary me-2" href="/Home/Register">START FOR FREE</a></li>
+                    <li>
+                        <a href="/Home/Login" class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 23 25"><path fill-rule="evenodd" clip-rule="evenodd" d="m22.469 22.837-.721-3.672c0-1.024-1.364-2.194-4.048-2.875a9.205 9.205 0 0 1-2.563-1.145c-.173-.096-.147-.99-.147-.99l-.864-.13c0-.072-.074-1.145-.074-1.145 1.034-.34.928-2.354.928-2.354.657.358 1.085-1.235 1.085-1.235.777-2.213-.387-2.08-.387-2.08a13.666 13.666 0 0 0 0-4.075c-.518-4.482-8.31-3.265-7.386-1.802C6.014.923 6.534 6.01 6.534 6.01l.494 1.317c-.685.436-.55.936-.4 1.495.063.233.128.476.138.73.047 1.269.839 1.006.839 1.006.049 2.095 1.101 2.367 1.101 2.367.198 1.316.074 1.092.074 1.092l-.936.111c.013.3-.012.599-.074.892-.544.238-.877.428-1.207.615-.338.192-.672.382-1.226.62-2.114.91-4.412 2.093-4.82 3.685-.19.742-.375 1.892-.517 2.907C3.1 24.142 6.695 24.917 10.539 25h1.37c3.853-.083 7.455-.861 10.56-2.163z"></path></svg>
+                            LOG IN
+                        </a>
+                    </li>
+                    <li class="d-none d-lg-block">
+                        <a class="btn ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 496 512"><path d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z"></path></svg>
+                            EN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <!-- End of Navbar -->
+
+    <!-- Main Section -->
+    <section class="slice pt-md-8 pb-0 bg-section-dark">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 pr-lg-5">
+                    <h6 class="text-white">- Schedule like a Pro</h6>
+                    <h1 class="display-4 text-white font-weight-bolder mb-4">
+                        A better way
+                        <strong class="d-block text-primary font-weight-bold h1">to manage your employees' schedule.</strong>
+                    </h1>
+                    <p class="lead text-white opacity-8">Stay on track with your employees' work shifts, holidays, overtime and many more. See detailed reports of everything you want</p>
+                    <div class="mt-5">
+                        <a href="/Home/Register" class="btn btn-primary btn-lg btn-icon d-lg-inline-block" >Start my free trial</a>
+                        <a href="#" class="btn btn-lg btn-white btn-icon">
+                            <span class="btn-inner--text ">Learn more</span>
+                            <span class="btn-inner--icon"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                        </a>
+                    </div>
+                    <!-- Icons -->
+                    <div class="mt-5 mt-lg-5 mt-xl-7">
+                        <h5 class="text-sm text-white opacity-7 mb-3">Compatible with:</h5>
+                        <div class="d-flex">
+                            <div class="mr-3">
+                                <div class="icon icon-shape icon-white rounded-circle" data-toggle="tooltip" title="" data-original-title="Bootstrap 4.5.3"><img alt="Image placeholder" src="https://webpixels.s3.eu-central-1.amazonaws.com/public/icons/bootstrap.svg" style="width:20px"></div>
+                            </div><div class="mr-3">
+                                <div class="icon icon-shape icon-white rounded-circle" data-toggle="tooltip" title="" data-original-title="HTML5">
+                                    <img alt="Image placeholder" src="https://webpixels.s3.eu-central-1.amazonaws.com/public/icons/html.svg" style="width:20px">
+                                </div>
+                            </div>
+                            <div class="mr-3">
+                                <div class="icon icon-shape icon-white rounded-circle" data-toggle="tooltip" title="" data-original-title="CSS3"><img alt="Image placeholder" src="https://webpixels.s3.eu-central-1.amazonaws.com/public/icons/css.svg" style="width:20px"></div>
+                            </div>
+                            <div class="mr-3"><div class="icon icon-shape icon-white rounded-circle" data-toggle="tooltip" title="" data-original-title="Sass"><img alt="Image placeholder" src="https://webpixels.s3.eu-central-1.amazonaws.com/public/icons/sass.svg" style="width:20px"></div></div>
+                            <div class="mr-3"><div class="icon icon-shape icon-white rounded-circle" data-toggle="tooltip" title="" data-original-title="jQuery"><img alt="Image placeholder" src="https://webpixels.s3.eu-central-1.amazonaws.com/public/icons/jquery.svg" style="width:20px"></div></div>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br /><br /><br /><br /><br />
+                </div>
+                <div class="col-12 col-lg-6 mt-7 mt-lg-0">
+                    <div class="position-relative left-8 left-lg-0">
+                        <figure><img alt="Image placeholder" src="/img/firm.png" class="img-fluid mw-lg-120 rounded-top shadow-lg zindex-100"></figure>
+                    </div>
+                    <figure class="col-7 col-md-6 col-lg-5 px-0 position-absolute bottom-0 left-4 left-lg-n5 z-index-101 overflow-hidden" style="height:420px"><img alt="Image placeholder" src="/img/phone.png" class="img-fluid mw-lg-120 rounded shadow"></figure>
+                </div>
+            </div>
+        </div>
+        <!-- SVG Shape slicer -->
+        <div class="shape-container shape-line shape-position-bottom zindex-102">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space="preserve" class=""><polygon points="2560 0 2560 100 0 100"></polygon></svg>
+        </div>
+    </section>
+    <!-- End of Main Section -->
+    <!-- Carousel Section -->
+    <section>
+        <div class="container position-relative">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center ">
+                            <img src="/img/schedule_tracking.png" class="rounded-lg d-block col-lg-8 " alt="...">
+                            <div class="col-12 col-lg-4 pr-lg-4 ">
+                                <h1 class="display-4 font-weight-bolder mb-4">
+                                    Schedule tracking
+                                    <strong class="d-block text-primary font-weight-bold h1">Simplify the shift and start your </strong>
+                                </h1>
+                                <a href="Home/Register" class="btn btn-primary btn-lg btn-icon" target="_blank">free 14-day trial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center ">
+                            <div class="col-12 col-lg-4 pr-lg-4 ">
+                                <h1 class="display-4 font-weight-bolder mb-4">
+                                    Ready to try?
+                                    <strong class="d-block text-primary font-weight-bold h1"> </strong>
+                                </h1>
+                                <a href="Home/Register" class="btn btn-primary btn-lg btn-icon" target="_blank">Register</a>
+                            </div>
+                            <img src="/img/task_manager.png" class="rounded-lg d-block col-lg-8 " alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center ">
+                            <img src="/img/detailed_reports.png" class="d-block col-lg-8 rounded-lg" alt="...">
+                            <div class="col-12 col-lg-4 pr-lg-4 ">
+                                <h1 class="display-4 font-weight-bolder mb-4">
+                                    Detailed Reports
+                                    <strong class="d-block text-primary font-weight-bold h1">time tracking details on a day-by-day basis</strong>
+                                </h1>
+                                <a href="#" class="btn btn-primary btn-lg btn-icon" target="_blank">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Carousel Section -->
+    <!-- Pricing Section with Cards -->
+    <section>
+        <div class="container position-relative">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center" id="pricing">
+                <h1 class="display-4 fw-normal">Pricing</h1>
+                <br>
+                <p class="fs-5 text-muted">Here are our pricing plans. You can choose what best fits you. Don't hesitate to contact us for additional info. If you are still wondering, try our free version.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Free</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">0BGN<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                        </div>
+                        <!-- Collapsing Dropdown in Cards -->
+                        <div class="card-footer">
+                            <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">See more</a>
+                            <div class="collapse" id="collapseOne">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Calendar</li>
+                                    <li class="list-group-item">Company workspace</li>
+                                    <li class="list-group-item">Drive</li>
+                                    <li class="list-group-item">Contact center</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Basic</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">15BGN<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>20 users included</li>
+                                <li>10 GB of storage</li>
+                                <li>Priority email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        </div>
+                        <div class="card-footer">
+                            <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">See more</a>
+                            <div class="collapse" id="collapseThree">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Calendar</li>
+                                    <li class="list-group-item">Company workspace</li>
+                                    <li class="list-group-item">Drive</li>
+                                    <li class="list-group-item">Contact center</li>
+                                    <li class="list-group-item">Tasks & projects</li>
+                                    <li class="list-group-item">Chats</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-header py-3">
+                            <div class="position-absolute top-0 start-100 translate-middle">
+                                <!-- Popular badge -->
+                                <span class="badge bg-success">
+                                    Popular
+                                </span>
+                            </div>
+                            <h4 class="my-0 fw-normal">Standart</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">29BGN<small class="text-muted fw-light">/mo</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>50 users included</li>
+                                <li>30 GB of storage</li>
+                                <li>Phone and email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                        </div>
+                        <div class="card-footer">
+                            <a class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">See more</a>
+                            <div class="collapse" id="collapseTwo">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Calendar</li>
+                                    <li class="list-group-item">Company workspace</li>
+                                    <li class="list-group-item">Drive</li>
+                                    <li class="list-group-item">Contact center</li>
+                                    <li class="list-group-item">Tasks & projects</li>
+                                    <li class="list-group-item">Chats</li>
+                                    <li class="list-group-item">Administration</li>
+                                    <li class="list-group-item">Time off & holidays </li>
+                                    <li class="list-group-item">Scheduling & attendence</li>
+                                    <li class="list-group-item">Invoices</li>
+                                    <li class="list-group-item">Expense tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card text-center mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">Get a customised plan</h3>
+                            <h5 class="text-muted mt-2 mb-2">Contact us or book a date for a meeting, where we can review all needs for your business</h5>
+                            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Pricing Section with Cards -->
+    <!-- Footer -->
+    <footer class="position-sticky pb-0" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-section-dark">
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100" xml:space="preserve" class=""><polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+            </div>
+
+            <div class="container pt-6">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <h3 class="text-secondary mb-2">Brilliant solution for your Company workspace</h3>
+                                <p class="lead mb-0 text-white opacity-8">Create schedules & receive reports fast and easy using My Company Schedule.</p>
+                            </div>
+                            <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
+                                <a href="#" class="btn btn-white btn-icon my-2" target="_blank">
+                                    <span class="btn-inner--icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book text-primary"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> </span>
+                                    <span class="btn-inner--text">Documentation</span>
+                                </a>
+                                <a href="Home/Register" class="btn btn-primary my-2 ml-0 ml-sm-3" target="_blank">Purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider divider-fade bg-light my-5">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <a class="navbar-brand text-white" href="#"><img alt="Image placeholder" src="/img/ms-icon-70x70.png" id="footer-logo">My Company Schedule</a>
+                        <p class="mt-4 text-sm text-white opacity-8 pr-lg-4">My Company Schedule attempts to bring the best scheduling experience to company managers and employees by offering the tools needed for having a quick and solid work tracking.</p>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-3 ml-lg-auto  mb-5 mb-lg-0">
+                        <h4 class="heading text-white mb-3">Account</h4>
+                        <ul class="list-unstyled ">
+                            <li><a class="text-white" href="#">Profile</a></li>
+                            <li><a class="text-white" href="#">Settings</a></li>
+                            <li><a class="text-white" href="#">Billing</a></li>
+                            <li><a class="text-white" href="#">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-3 mb-5 mb-lg-0">
+                        <h4 class="heading text-white mb-3">About</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-white" href="#">Services</a></li>
+                            <li><a class="text-white" href="#">Pricing</a></li>
+                            <li><a class="text-white" href="#">Contact</a></li>
+                            <li><a class="text-white" href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-3 mb-5 mb-lg-0">
+                        <h4 class="heading text-white mb-3">Company</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-white" href="#">Community</a></li>
+                            <li><a class="text-white" href="#">Help center</a></li>
+                            <li><a class="text-white" href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="divider divider-fade bg-light my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-6">
+                        <div class="copyright text-sm font-weight-bold text-white  text-md-left"><p>© 2022 <a href="https://www.instagram.com/christina.diann/" class="font-weight-bold" target="_blank">Christina Diann</a> SE student, PU "Paisii Hilendarski"</p></div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center text-white justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Terms</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Privacy</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+

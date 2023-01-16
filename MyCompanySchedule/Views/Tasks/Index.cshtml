@@ -1,0 +1,99 @@
+﻿@model MyCompanySchedule.ViewModels.Tasks.IndexVM
+@using MyCompanySchedule.Entities
+@{
+    this.Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["title"] = "TASKS";
+}
+<fieldset>
+    <h1>TASKS</h1>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Tasks</a></li>
+            <li class="breadcrumb-item active"><a href="#">Index</a></li>
+        </ol>
+    </nav>
+    <form action="/Tasks/Index" method="post">
+         @Html.HiddenFor(m => m.Pager.ItemsPerPage)
+       <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" id="Username" name="Filter.Title" value="@Model.Filter.Title">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Select what to show</label>
+            <select class="form-select" id="IsDone" name="Filter.IsDone" value="@Model.Filter.IsDone">
+                <option selected>Show All</option>
+                <option value="true">Done</option>
+                <option value="false">Not done</option>
+            </select>
+        </div>
+        <div class="mb-3 form-check">
+            @Html.CheckBoxFor(m => m.Filter.OwnerTasks)
+            <label class="form-check-label" for="OwnerTasks">Show only My Tasks</label>
+        </div>
+        <div class="mb-3 row me-0 justify-content-end">
+            <a href="/Tasks/Index" class="btn col-3 me-3 btn-outline-primary">Clear</a>
+            <input type="submit" class="btn col-3 btn-primary" value="Filter" />
+        </div>
+        <a href="Create" class="btn btn-primary me-2">Create New</a>
+        <div class="table-responsive">
+            <table class=" table table-hover caption-top">
+                <caption>All Tasks</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Deadline</th>
+                        <th scope="col">Created by:</th>
+                        <th scope="col">Is Done?</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ToDoList item in Model.Items)
+                    {
+                        <tr>
+                        <td>@item.Title</td>
+                        <td>@item.Deadline</td>
+                        <td>@item.Owner.Username</td>
+                        <td>@item.IsDone</td>
+                        <td>			
+                            <a href="/Tasks/Edit?Id=@item.Id">EDIT</a>
+                            <a href="/Tasks/Assign?Id=@item.Id">ASSIGN</a>
+                        </td>
+                    </tr> 
+                    }
+                </tbody>
+            </table>
+        </div>
+        @{
+            string controller = this.ViewContext.RouteData.Values["controller"].ToString();
+            string action = this.ViewContext.RouteData.Values["action"].ToString();
+        }
+         <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="/@controller/@action?Pager.Page=@(Model.Pager.Page-1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage&Filter.Title=@Model.Filter.Title&Filter.IsDone=@Model.Filter.IsDone">Previous</a></li>
+                @for(int i=0; i<Model.Pager.PagesCount; i++)
+                {
+                 <li class="page-item">
+                     <a class="page-link" href="/@controller/@action?Pager.Page=@(i+1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage&Filter.Title=@Model.Filter.Title&Filter.IsDone=@Model.Filter.IsDone">@(i+1)</a>
+                 </li>  
+                }                
+                <li class="page-item"><a class="page-link" href="/@controller/@action?Pager.Page=@(Model.Pager.Page+1)&Pager.ItemsPerPage=@Model.Pager.ItemsPerPage&Filter.Title=@Model.Filter.Title&Filter.IsDone=@Model.Filter.IsDone">Next</a></li>
+                <li class="ms-3">
+                    <script>
+                        function ddlItemsPerPage_OnChange(){
+                            let control = document.getElementById("ddlItemsPerPage");
+                            document.location.href="/@controller/@action?Pager.ItemsPerPage=" + control.value + "&Filter.Title=@Model.Filter.Title&Filter.IsDone=@Model.Filter.IsDone";
+                        }
+                    </script>
+                    <select class="form-select" aria-label="Default select example" id="ddlItemsPerPage" onchange="ddlItemsPerPage_OnChange()">
+                        <option selected>Select how many to show</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                </li>
+            </ul>
+           
+        </nav>
+    </form>
+</fieldset>

@@ -1,0 +1,29 @@
+﻿.bg-image {
+    background-image: url(/img/background_login.jpg);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+}
+.btn-white {
+    color: #273444;
+    background-color: #fff !important;
+    border-color: #fff;
+    box-shadow: none;
+}
